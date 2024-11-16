@@ -44,3 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSelection();
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const b_B = document.querySelector(".b_B");
+
+    // B 버튼 클릭 시 뒤로가기 기능
+    b_B.addEventListener("click", function (event) {
+        event.preventDefault(); // 기본 동작 방지
+        window.history.back(); // 뒤로가기
+    });
+});
